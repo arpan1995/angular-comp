@@ -1,4 +1,17 @@
-<h1>Hello {{name}}!!!</h1>
+<h1 [class]="successClass">Hello {{name.toUpperCase()}}!!!</h1>
+<h2 [class.text-danger]="haserror">For an example</h2>
+<h2 [ngStyle]="titlestyle">To check the style NgStyle</h2>
 <p>
-  Start editing to see some magic happen :)
+  Start editing to see some magic happen when {{greetUser()}} touched the things :)
 </p> 
+
+<input [id] = "myId" type="text" value="Enter txt"><br>
+<input [disabled]="isDisable">
+<br>
+<button>Submit</button>
+
+<p class="para"> If you want to see my Full Name click below</p>
+<button (click)="onClick()">Hit here</button><br>
+{{greet}}
+
+<button (click)="timenow()">Time Now</button>

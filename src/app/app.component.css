@@ -7,3 +7,13 @@ p {
   font-size: large;
   
 }
+.text-success{
+  color: blue;
+}
+.text-danger{
+  color: violet;
+}
+
+.para{
+  color: brown;
+}
