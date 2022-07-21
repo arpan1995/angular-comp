@@ -16,3 +16,25 @@
 <br>
 <button (click)="greeting='Welcome Boss'">Mosti</button>
 {{greeting}}
+
+<h3>{{name}}</h3>
+<input #myInput type="text"><br>
+<button (click)="value(myInput.value)">Log Value</button>
+
+<p>Let me show the example of Two way data binding</p>
+<input [(ngModel)]="uname" value="text">
+<p>{{uname}}</p>
+
+<div>
+  <button class="btn" (click)="getNow()">Click for NgIf</button>
+  <div *ngIf="displayName, else elseb"> New Block
+  </div>
+</div>
+<ng-template #elseb>
+<div>
+  <p>Now this will visible</p>
+</div>
+</ng-template>
+
+
+<p *ngFor="let dataList of listOf">{{dataList.name}}</p>
